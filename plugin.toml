@@ -1,0 +1,27 @@
+id = "browser-frame"
+name = "Browser Frame"
+version = "0.1.0"
+api = 1
+
+[[steps]]
+name = "browser-frame"
+label = "Browser frame"
+role = "shape"
+
+[[steps.props]]
+key = "url"
+label = "URL"
+kind = "text"
+default = "example.com"
+
+[[steps.props]]
+key = "theme"
+label = "Theme"
+kind = { enum = ["light", "dark"] }
+default = "light"
+
+[[steps.props]]
+key = "show_url"
+label = "Show URL"
+kind = "bool"
+default = true
