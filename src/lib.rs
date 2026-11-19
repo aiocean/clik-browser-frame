@@ -74,7 +74,11 @@ fn browser_frame(input: &v1::RenderInput) -> v1::RenderOutput {
         _ => &LIGHT,
     };
     let url = match input.props.get("url") {
-        Some(v1::PropValue::Text(t)) => t.as_str(),
+        // Shown like a browser's address bar: without the scheme or a trailing slash.
+        Some(v1::PropValue::Text(t)) => {
+            let t = t.strip_prefix("https://").or_else(|| t.strip_prefix("http://")).unwrap_or(t);
+            t.strip_suffix('/').unwrap_or(t)
+        }
         _ => "example.com",
     };
     let show_url = !matches!(

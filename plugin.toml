@@ -1,6 +1,6 @@
 id = "browser-frame"
 name = "Browser Frame"
-version = "0.1.2"
+version = "0.1.3"
 api = 1
 
 [[steps]]
@@ -8,7 +8,7 @@ name = "browser-frame"
 label = "Browser frame"
 role = "shape"
 icon = "icons/browser-frame.svg"
-frame = { top = 28 }  # the title bar (BAR_HEIGHT); the screenshot fills the body
+frame = { top = 28, url = "url" }  # title bar (BAR_HEIGHT); the page fills the body, its address goes in `url`
 
 [[steps.props]]
 key = "url"

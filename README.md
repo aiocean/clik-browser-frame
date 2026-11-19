@@ -16,7 +16,7 @@ A [clik](https://clik.aiocean.io) plugin that adds macOS-style window chrome as 
 | `theme` | `light` \| `dark` | `light` | Chrome colors |
 | `show_url` | bool | `true` | Show the URL pill |
 
-To put a screenshot in the frame, right-click the screenshot and choose **Frame with → Browser frame**: the frame is sized so the screenshot fills its body, and both are grouped.
+To put a screenshot in the frame, right-click the screenshot and choose **Frame with → Browser frame**: the frame is sized so the screenshot fills its body, and both are grouped. To put a live web page in it, select the frame and paste a web address (⌘V): clik loads the page, puts its screenshot in the frame and shows the address in the URL pill.
 
 No config, no network access.
 
