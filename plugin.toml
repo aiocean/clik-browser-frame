@@ -1,6 +1,6 @@
 id = "browser-frame"
 name = "Browser Frame"
-version = "0.1.1"
+version = "0.1.2"
 api = 1
 
 [[steps]]
@@ -8,6 +8,7 @@ name = "browser-frame"
 label = "Browser frame"
 role = "shape"
 icon = "icons/browser-frame.svg"
+frame = { top = 28 }  # the title bar (BAR_HEIGHT); the screenshot fills the body
 
 [[steps.props]]
 key = "url"
