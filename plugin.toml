@@ -1,12 +1,13 @@
 id = "browser-frame"
 name = "Browser Frame"
-version = "0.1.0"
+version = "0.1.1"
 api = 1
 
 [[steps]]
 name = "browser-frame"
 label = "Browser frame"
 role = "shape"
+icon = "icons/browser-frame.svg"
 
 [[steps.props]]
 key = "url"
